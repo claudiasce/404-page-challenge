@@ -1,0 +1,39 @@
+/* ----- ESTILOS BASE ----- */
+
+/*  Importación de fuentes desde Google Fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Space+Mono&display=swap');
+
+
+/* Normalizando estilos*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    /*  Variables del proyecto  */
+  
+    /*  Anchura máxima del contenido en desktop */
+    --max-width : 1200px;
+  
+    /*  Colores  */
+    --title-color       : #333333;
+    --text-color        : #4F4F4F;
+    --footer-color      : #BDBDBD;
+    --white-color       : #FFFFFF;
+    
+  
+    /*  Fuentes  */
+    --body-font  : 'Inconsolata', sans-serif;
+    --title-font : 'Space Mono', monospace;
+}
+
+
+
+body {
+    display: flex;
+    flex-direction: column;
+
+}
