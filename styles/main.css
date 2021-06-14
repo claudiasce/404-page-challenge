@@ -1,16 +1,14 @@
 /* ----- ESTILOS BASE ----- */
 
 /*  Importación de fuentes desde Google Fonts  */
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Space+Mono&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@400;700&family=Space+Mono:wght@400;700&display=swap');
 
 /* Normalizando estilos*/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin          : 0;
+    padding         : 0;
+    box-sizing      : border-box;
 }
-
 
 :root {
     /*  Variables del proyecto  */
@@ -26,14 +24,93 @@
     
   
     /*  Fuentes  */
-    --body-font  : 'Inconsolata', sans-serif;
-    --title-font : 'Space Mono', monospace;
+    --title-font        : 'Inconsolata', sans-serif;
+    --body-font         : 'Space Mono', monospace;
+    --footer-font       : 'Montserrat', sans-serif;
+
+      /*  Tamaños  */
+  --header-height       : 3rem;
+  --logo-size           : 1.5rem;
+
 }
 
+header {
+    display             : flex;
+    width               : 100%;
+    height              : var(--header-height);
+    justify-content     : flex-start;
+    align-items         : flex-end;  
+}
 
+header p {
+    font-family         : var(--title-font);
+    font-size           : var(--logo-size);
+    font-weight         : 700;
+    margin-left         : 2rem;
+    letter-spacing      : -0.08em;
+}
 
-body {
-    display: flex;
-    flex-direction: column;
+main {
+    display             : flex;
+    flex-direction      : column;
+    align-items         : center;
+    justify-content     : center;
+    width               : 100%;
+    height              : calc(100vh - 2*var(--header-height));
+    font-family         : var(--body-font);
+}
 
+main img {
+    width               : 70%;
+}
+
+main .text-container {
+    display             : flex;
+    flex-direction      : column;
+    gap                 : 1rem;
+}
+
+main .text-container h1 {
+    font-size           : 3rem;
+    font-weight         : 700;
+    line-height         : 70px;
+    color               : var(--title-color);
+}
+
+main .text-container p {
+    font-size           : 1.125rem;
+    font-weight         : 400;
+    color               : var(--text-color);
+}
+
+main .text-container .main-button {
+    display         : inline-block;
+    padding         : 1.25rem 1.75rem;
+    background-color: var(--title-color);
+    /* width               : 216px;
+    height              : 68px; */
+    text-decoration     : none;
+    font-size           : 0.875rem;
+    font-weight         : 700;
+    color               : var(--white-color); 
+} 
+
+footer {
+    display             : flex;
+    justify-content     : center;
+    align-items         : center;
+    width               : 100%;
+    height              : var(--header-height);
+}
+
+footer p {
+    color               : var(--footer-color);
+    font-family         : var(--footer-font);
+    font-size           : 14px;
+    font-weight         : 400;
+}
+
+footer span {
+    font-weight         : 700;
+    text-decoration     : underline;
 }
