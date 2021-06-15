@@ -71,4 +71,4 @@ This application/site was created as a submission to a [DevChallenges](https://d
 ## Contact
 
 - GitHub [@claudiasce](https://github.com/claudiasce)
-- Twitter [@Claudia_SCe](https://twitter.com/Claudia_SCe})
+- Twitter [@Claudia_SCe](https://twitter.com/Claudia_SCe)
