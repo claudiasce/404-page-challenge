@@ -5,9 +5,10 @@
 
 /* Normalizando estilos*/
 * {
-    margin          : 0;
-    padding         : 0;
-    box-sizing      : border-box;
+    margin              : 0;
+    padding             : 0;
+    box-sizing          : border-box;
+    border              : 1px solid red;
 }
 
 :root {
@@ -34,7 +35,15 @@
 
 }
 
-header {
+.content-wrapper {
+    width: calc(100% - 2rem);
+    max-width: var(--max-width);
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+}
+
+.main-header {
     display             : flex;
     width               : 100%;
     height              : var(--header-height);
@@ -42,11 +51,10 @@ header {
     align-items         : flex-end;  
 }
 
-header p {
+.main-header p {
     font-family         : var(--title-font);
     font-size           : var(--logo-size);
     font-weight         : 700;
-    margin-left         : 2rem;
     letter-spacing      : -0.08em;
 }
 
@@ -58,10 +66,19 @@ main {
     width               : 100%;
     height              : calc(100vh - 2*var(--header-height));
     font-family         : var(--body-font);
+    gap                 : 4rem;
 }
 
-main img {
-    width               : 70%;
+main .content-img {
+    display             : flex;
+    flex-direction      : column;
+    justify-content     : center;
+    align-items         : center;
+    margin-top          : 2rem;
+}
+
+main .content-img img {
+    width               : 50%;
 }
 
 main .text-container {
@@ -84,9 +101,9 @@ main .text-container p {
 }
 
 main .text-container .main-button {
-    display         : inline-block;
-    padding         : 1.25rem 1.75rem;
-    background-color: var(--title-color);
+    display             : inline-block;
+    padding             : 1.25rem 1.75rem;
+    background-color    : var(--title-color);
     /* width               : 216px;
     height              : 68px; */
     text-decoration     : none;
