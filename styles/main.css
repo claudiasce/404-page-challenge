@@ -31,7 +31,7 @@
       /*  Tamaños  */
     --header-height       : 3rem;
     --logo-size           : 1.5rem;
-    --title-font-size     : 3rem;
+    --title-font-size     : 2.7rem;
     --subtitle-font-size  : 1.125rem;
 
 }
@@ -50,7 +50,7 @@ body {
     display             : flex;
     flex-direction      : column;
     min-height          : 100vh;
-    overflow            : hidden;
+    /* overflow            : hidden; */
 }
 
 .content-wrapper {
@@ -95,10 +95,10 @@ main .content{
     gap                 : 3rem;
     width               : 100%;
     font-family         : var(--body-font);
-    padding             : 4rem 0;
+    padding             : 2rem 0;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-height: 900px) {
     main .content {
         grid-template-columns: 1fr 1fr;
     }
@@ -112,7 +112,7 @@ main .img-container {
 }
 
 main .img-container img {
-    width               : 60%;
+    width       : 50%;
 }
 
 @media screen and (min-width: 1024px) {
@@ -129,7 +129,7 @@ main .container {
     display             : flex;
     flex-direction      : column;
     max-width           : 540px; 
-    gap                 : 2.2rem;
+    gap                 : 3rem;
 }
 
 main .container h1 {
@@ -137,13 +137,14 @@ main .container h1 {
     font-weight         : 700;
     line-height         : 70px;
     color               : var(--title-color);
+
 }
 
 main .container p {
     font-size           : var(--subtitle-font-size);
     font-weight         : 400;
     width               : 90%; 
-    color               : var(--text-color);
+    color               : var(--subtitle-color);
 }
 
 main .container .main-button {
