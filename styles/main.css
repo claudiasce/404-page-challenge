@@ -14,7 +14,7 @@
     /*  Variables del proyecto  */
 
     /*  Anchura máxima del contenido en desktop */
-    --max-width : 1200px;
+    --max-width : 860px;
 
     /*  Colores  */
     --title-color       : #333333;
@@ -46,11 +46,16 @@
     }
 }
 
+@media screen and (min-width: 1200px) {
+    :root {
+        --max-width : 1200px;
+    }
+}
+
 body {
     display             : flex;
     flex-direction      : column;
     min-height          : 100vh;
-    /* overflow            : hidden; */
 }
 
 .content-wrapper {
@@ -95,12 +100,13 @@ main .content{
     gap                 : 3rem;
     width               : 100%;
     font-family         : var(--body-font);
-    padding             : 2rem 0;
+    padding             : 4rem 0;
 }
 
 @media screen and (min-width: 1024px) and (max-height: 900px) {
     main .content {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns   : 1fr 1fr;
+        padding                 : 5rem 0;
     }
 }
 
@@ -112,23 +118,20 @@ main .img-container {
 }
 
 main .img-container img {
-    width       : 50%;
+    width       : 75%;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px)  and (max-height: 900px){
     main .img-container {
-        align-items     :flex-start;
+        justify-content     : flex-start;
+        align-items         : flex-start;
     }
 
-    main .img-container img {
-        width               : 80%;
-    }
 }
 
 main .container {
     display             : flex;
     flex-direction      : column;
-    max-width           : 540px; 
     gap                 : 3rem;
 }
 
@@ -137,13 +140,13 @@ main .container h1 {
     font-weight         : 700;
     line-height         : 70px;
     color               : var(--title-color);
-
+    letter-spacing      : -0.035em;
 }
 
 main .container p {
     font-size           : var(--subtitle-font-size);
     font-weight         : 400;
-    width               : 90%; 
+    max-width           : 400px; 
     color               : var(--subtitle-color);
 }
 
@@ -162,8 +165,6 @@ main .container .main-button:hover {
     color               : var(--title-color);
     border              : 1px solid var(--title-color);
 }
-
-
 
 footer {
     display             : flex;
