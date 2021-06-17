@@ -30,13 +30,12 @@
   - [Built With](#built-with)
 - [Features](#features)
 - [Contact](#contact)
-- [Acknowledgements](#acknowledgements)
 
 <!-- OVERVIEW -->
 
 ## Overview
 
-![screenshot]("/assets/solution_image.png")
+![screenshot](solution_image.png)
 
 
 ### Built With
